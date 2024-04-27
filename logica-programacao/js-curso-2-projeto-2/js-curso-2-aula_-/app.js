@@ -15,6 +15,7 @@ paragrafo.innerHTML = 'Escolha um numero entre 1 e 10';
 function exibirTextoNaTela(tag,texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
+    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
 }
 
 //Essa função serve para inserir mensagens no html atravez das tags.
